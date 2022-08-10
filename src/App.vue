@@ -1,28 +1,29 @@
 <template>
+<!-- app div is a parent div -->
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+<!-- box will have all the html from component twitter data -->
+    <div id="box">
+      <twitter-data></twitter-data>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// twitter data component will get imported from src/components/twitterdata
+import TwitterData from "@/components/twitterData.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    TwitterData,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+/* box will have some properties */
+#box{
+  display: grid;
+  grid-auto-flow: row;
 }
 </style>
