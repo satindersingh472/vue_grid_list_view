@@ -26,4 +26,5 @@ export default {
   display: grid;
   grid-auto-flow: row;
 }
+
 </style>

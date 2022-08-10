@@ -1,7 +1,8 @@
 <template>
   <div>
     <!-- toggle button for changing the view -->
-    <button id="grid">Toggle</button>
+    <button id="grid">Toggle </button>
+    <h2>click above</h2>
   </div>
 </template>
 
@@ -66,5 +67,7 @@ export default {
 };
 </script>
 <style scoped>
-
+h2{
+    color:red;
+}
 </style>
